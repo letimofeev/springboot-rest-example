@@ -1,6 +1,5 @@
 package com.spring.springboot.springboot_course.service;
 
-
 import com.spring.springboot.springboot_course.entity.Employee;
 
 import java.util.List;
@@ -14,4 +13,6 @@ public interface EmployeeService {
     Employee getEmployee(int id);
 
     void deleteEmployee(int id);
+
+    List<Employee> findAllByName(String name);
 }
